@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0",
+    "dotenv": "^16.0.0",
     "env": "^0.0.2",
     "npm": "^3.10.7"
   },
