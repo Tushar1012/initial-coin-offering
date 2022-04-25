@@ -15,6 +15,7 @@ export default function Home() {
   const zero = BigNumber.from(0);
   const [walletConnected, setWalletConnected] = useState(false);
   const [tokenAmount, setTokenAmount] = useState(zero);
+  // loding to show in screen while loading
   const [loading, setLoading] = useState(false);
   const [tokenToBeClaimed, setTokenToBeClaimed] = useState(zero);
   // tokensMinted is the total number of tokens that have been minted till now out of 10000(max total supply)
