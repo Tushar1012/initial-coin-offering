@@ -175,6 +175,7 @@ export default function Home() {
       getTokenToBeClaimed();
     }
   }, [walletConnected]);
+  // wallet will ne connected if we change stage
   const renderButton = () => {
     if (loading) {
       return (
@@ -255,6 +256,7 @@ export default function Home() {
                 minted!!!
               </div>
               {renderButton()}
+              
             </div>
           ) : (
             <button onClick={connectWallet} className={styles.button}>
@@ -271,8 +273,8 @@ export default function Home() {
       </footer>
     </div>
   );
-
-
   
 
 }
+
+
