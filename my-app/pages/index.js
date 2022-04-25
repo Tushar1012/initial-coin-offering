@@ -23,6 +23,7 @@ export default function Home() {
   const [tokensMinted, setTokensMinted] = useState(zero);
 
   const web3ModalRef = useRef();
+  // initiage provider or signer
   const getProviderOrSigner = async (needSigner = false) => {
     try {
       const provider = await web3ModalRef.current.connect();
